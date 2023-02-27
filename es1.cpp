@@ -9,7 +9,7 @@ Output: Somma degli elementi pari: 14 Somma degli elementi dispari: 17
 #include <string>
 #include <array>
 using namespace std;
-
+/*
 int main() {
     int size;  // dimensione dell'array
     cout << "Inserisci la dimensione dell'array: "<<endl;
@@ -44,3 +44,36 @@ int main() {
 
     return 0;
 }
+*/
+void sommaPariDispari(int arr[], int size) {
+    int sommaPari = 0;
+    int sommaDispari = 0;
+
+    for (int i = 0; i < size; i++) {
+        if (arr[i] % 2 == 0) {
+            sommaPari += arr[i];
+        } else {
+            sommaDispari += arr[i];
+        }
+    }
+
+    cout << "Somma degli elementi pari: " << sommaPari << endl;
+    cout << "Somma degli elementi dispari: " << sommaDispari << endl;
+}
+int main(){
+    int size;
+    cout << "Inserisci la dimensione dell'array: ";
+    cin >> size;
+
+    int arr[size];
+    cout << "Inserisci gli elementi dell'array:" << endl;
+    for (int i = 0; i < size; i++) {
+        cin >> arr[i];
+    }
+    sommaPariDispari(arr, size);
+
+
+    return 0;
+
+}
+
