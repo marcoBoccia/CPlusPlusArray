@@ -30,4 +30,3 @@ int main() {
     cout << "La somma massima di un sottovettore consecutivo e': " << maxSum << endl;
     return 0;
 }
-
