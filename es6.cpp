@@ -9,8 +9,8 @@ using namespace std;
 
 int main(){
     int arr[] = {0,1,2,3,4};
-    int len =sizeof(arr)/sizeof(arr[0]);
-    int evenArr[len]; //creo l'array che sarà il mio output
+    int len = sizeof(arr)/sizeof(arr[0]);
+    int evenArr[] = {}; //creo l'array che sarà il mio output 
     int v = 0; // inizializzo il valore per l'indice del mio array in output
 
     for(int i=0; i<len; i++){
