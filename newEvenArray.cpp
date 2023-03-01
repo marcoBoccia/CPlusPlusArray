@@ -11,18 +11,17 @@ int main()
 {
     int arr[] = {0, 1, 2, 3, 4};
     int len = sizeof(arr) / sizeof(arr[0]);
+    int count = 0;
     // ! punto 1 scorro tutto l'array
     for (int i = 0; i < len; i++)
     {
         // ! punto 2 conto i pari
         if (arr[i] % 2 == 0)
         {
-            int evenArr[] = {};
-            // ! punto 3 creo il risultato della dimensione giusta
-            evenArr[0] = arr[i];
+            count ++;
         }
     }
-    int evenArr[3]; // creo l'array che sarà il mio output
+    int evenArr[count]; // creo l'array che sarà il mio output
     int v = 0;      // inizializzo il valore per l'indice del mio array in output
     // ! punto 4 scorro tutto l array
     for (int i = 0; i < len; i++)
